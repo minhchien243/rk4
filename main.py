@@ -44,9 +44,9 @@ T = 0
 h = 0.5
 f = open("answer.txt", "a")
 for i in range(9):
-    f.writelines(["Ti: ", str(T), '\n'])
+    f.writelines(["Ti: ", str(T),  '\n'])
     f.writelines(["Wi: ", str(wi), '\n'])
-    f.writelines(["Ui: ", str(u1(i/2)), str(u2(i/2)), str(u3(i/2)), '\n'])
+    f.writelines(["Ui: ", str([u1(i/2), u2(i/2), u3(i/2)]), '\n'])
     f.writelines(["Err: ", str(error(wi, i/2)), '\n'])
     k1 = [_u1(T, wi) * h, _u2(T, wi) * h, _u3(T, wi) * h]
     tmp = calc(wi, k1, 0)
