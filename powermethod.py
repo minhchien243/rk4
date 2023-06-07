@@ -5,7 +5,7 @@ import math
 def morm(A: np.ndarray):
     sum = 0
     for x in A:
-        sum += x**2
+        sum += x ** 2
     return math.sqrt(sum)
 
 
@@ -28,8 +28,8 @@ def maximum_entry_scaling(A: np.ndarray, x: np.ndarray, iter):
         print("euclidean_scaling: ", lamda, x)
     return lamda, x
 
+
 A = [[3, 2], [2, 3]]
 x = [1, 0]
-
 
 euclidean_scaling(np.array(A), np.array(x), 5)
